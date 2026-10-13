@@ -1,0 +1,25 @@
+# CPM Package Lock
+# This file should be committed to version control
+
+# CPMLicenses.cmake
+CPMDeclarePackage(CPMLicenses.cmake
+  VERSION 0.0.4
+  GITHUB_REPOSITORY TheLartians/CPMLicenses.cmake
+)
+# Common CMake additions for Amiga
+CPMDeclarePackage(CMakeAmigaCommon
+  GIT_TAG 1.0.9
+  GITHUB_REPOSITORY AmigaPorts/cmake-amiga-common-library
+)
+# Emu68 devicetree.resource
+CPMDeclarePackage(devicetree.resource
+  GIT_TAG 064095a749f72df8fa5165670a7ed16911a566c7
+  GITHUB_REPOSITORY michalsc/devicetree.resource
+  EXCLUDE_FROM_ALL YES
+)
+# Emu68 pcie.library
+CPMDeclarePackage(pcie.library
+  GIT_TAG 1.0.0
+  GITHUB_REPOSITORY AmigaPorts/pcie.library
+  EXCLUDE_FROM_ALL YES
+)
